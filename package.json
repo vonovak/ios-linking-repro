@@ -4,18 +4,31 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "fix-deps": "npx expo install --check"
   },
   "dependencies": {
-    "expo": "~51.0.18",
+    "@expo/metro-runtime": "~3.2.3",
+    "@react-native-vector-icons/common": "./react-native-vector-icons-common-0.0.1-alpha.20.tgz",
+    "@react-native-vector-icons/fontawesome6": "./react-native-vector-icons-fontawesome6-6.6.0-alpha.28.tgz",
+    "@react-native-vector-icons/simple-line-icons": "./react-native-vector-icons-simple-line-icons-2.5.5-alpha.25.tgz",
+    "@react-native-vector-icons/zocial": "./react-native-vector-icons-zocial-1.1.1-alpha.25.tgz",
+    "@types/react": "~18.2.79",
+    "expo": "~51.0.28",
+    "expo-font": "./expo-font-12.0.5.tgz",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-dom": "^18.2.0",
+    "react-native": "0.74.5",
+    "react-native-web": "~0.19.10",
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "react-native-builder-bob": "^0.30.0"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
